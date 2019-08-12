@@ -37,7 +37,7 @@ public class SizeUpdate : MonoBehaviour
         else
         {
             canavasScript.GetComponent<RectTransform>().localScale = new Vector2(0f, 0f);
-            text.GetComponent<TextMeshProUGUI>().text = "0 %";
+            text.GetComponent<TextMeshProUGUI>().text = "0 % Visible";
         }
 
     }
@@ -51,7 +51,7 @@ public class SizeUpdate : MonoBehaviour
         }
         else
         {
-            text.GetComponent<TextMeshProUGUI>().text = "100 %";
+            text.GetComponent<TextMeshProUGUI>().text = "100 % Visible";
         }
     }
 
@@ -65,7 +65,7 @@ public class SizeUpdate : MonoBehaviour
 
         float percentageOfOriginalArea = (1 - (((originalHeight * originalWidth) - (currentHeight * currentWidth)) / (originalHeight * originalWidth))) * 100;
 
-        return percentageOfOriginalArea.ToString() + " %";
+        return percentageOfOriginalArea.ToString() + " % Visible";
     }
 
 
